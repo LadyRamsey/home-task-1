@@ -17,7 +17,7 @@ public class Main {
 		b = ss.nextInt();
 		
 		System.out.println("Enter the size of side C");
-		int c;
+		double c;
 		c = ss.nextInt();
 		
 		double p = (a + b + c) / 2;
