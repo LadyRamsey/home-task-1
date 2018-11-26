@@ -1,1 +1,37 @@
-,
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Input sise of high");
+		int h;
+		h = sc.nextInt();
+
+		System.out.println("Input sise of wigh");
+		int w;
+		w = sc.nextInt();
+
+		for (int i = 1; i <= h; i++) {
+			if (i == 1 || i == h) {
+				for (int j = 1; j <= w; j++) {
+					System.out.print("*");
+				}
+			} else {
+				for (int j = 1; j <= w; j++) {
+					if (j == 1 || j == w) {
+						System.out.print("*");
+					} else {
+						System.out.print(" ");
+					}
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+
