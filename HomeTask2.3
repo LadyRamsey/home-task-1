@@ -1,0 +1,24 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Input numbet of the year");
+
+		int year;
+		year = sc.nextInt();
+
+		if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+			System.out.println("There are 366 days in this year");
+		} else {
+			System.out.println("There are 365 days in this year");
+		}
+
+	}
+
+}
