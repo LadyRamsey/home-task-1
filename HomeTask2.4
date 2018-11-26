@@ -1,0 +1,30 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Input side A");
+		int a;
+		a = sc.nextInt();
+		
+		System.out.println("Input side B");
+		int b;
+		b = sc.nextInt(); 
+		
+		System.out.println("Input side C");
+		int c;
+		c = sc.nextInt();
+		
+		if((a+b>c) || (a+c>b) || (b+c>a)) {
+			System.out.println("This triangle exists");
+		} else {
+			System.out.println("This triangle not exists");
+		}
+		
+
+	}
