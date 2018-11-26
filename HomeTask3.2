@@ -1,1 +1,24 @@
-bbb
+package com.gmail.gunko;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input a number from 4 to 16");
+		int a;
+		a = sc.nextInt();
+		int result = 1;
+		if (a > 4 && a < 16) {
+			System.out.println("The factorial of number " + a + " is:");
+			for (int i = 1; i <= a; i++) {
+				result = result*i;
+				System.out.println(a + "x" + i + "=" + result);
+			}
+		} else {
+			System.out.println("You input wrong number");
+		}
+	}
+}
