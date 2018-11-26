@@ -1,0 +1,37 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int number;
+		System.out.println("Input number of an aparment");
+		number = sc.nextInt();
+
+		if (number <= 180) {
+			int ent;
+			if ((number % 36) > 1) {
+				ent = number / 36 + 1;
+			} else {
+				ent = number / 36;
+			}
+
+			int flo;
+			if (((number - (36 * (ent - 1))) % 4) > 1) {
+				flo = (number - (36 * (ent - 1))) / 4 + 1;
+			} else {
+				flo = (number - (36 * (ent - 1))) / 4;
+			}
+
+			System.out.println("The number of floor is " + flo);
+			System.out.println("The number of entrance is " + ent);
+		} else {
+			System.out.println("Apartment with such number is not in this house.");
+		}
+	}
+
+}
