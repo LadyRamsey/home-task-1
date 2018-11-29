@@ -1,0 +1,36 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// (X-Xa)(Yb-Ya)-(Y-Ya)(Xb-Xa)
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Input X coordinate  for the point");
+		double x = sc.nextDouble();
+
+		System.out.println("Input Y coordinate  for the point");
+		double y = sc.nextDouble();
+
+		int xa = 0;
+		int ya = 0;
+
+		int xb = 4;
+		int yb = 4;
+
+		int xc = 6;
+		int yc = 1;
+
+		if ((x - xa) * (yb - ya) - (y - ya) * (xb - xa) < 0 || (x - xb) * (yc - yb) - (y - yb) * (xc - xb) < 0
+				|| (x - xc) * (ya - yc) - (y - yc) * (xa - xc) < 0) {
+			System.out.println("This point is not in the tringle");
+		} else {
+			System.out.println("This point is in the tringle");
+		}
+
+	}
+
+}
