@@ -1,0 +1,33 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Input first number og your ticket");
+
+		int a = sc.nextInt();
+
+		System.out.println("Input second number og your ticket");
+
+		int b = sc.nextInt();
+
+		System.out.println("Input third number og your ticket");
+
+		int c = sc.nextInt();
+
+		System.out.println("Input fourth number og your ticket");
+
+		int d = sc.nextInt();
+
+		if (a + b == c + d) {
+			System.out.println("Your ticket are lucky!!!");
+		} else {
+			System.out.println("Sorry, your ticket are not lucky. Try again)");
+		}
+	}
+
+}
