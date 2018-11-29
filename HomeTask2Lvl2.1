@@ -1,0 +1,30 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Input X coordinate  for the point");
+
+		double x = sc.nextDouble();
+
+		System.out.println("Input Y coordinate  for the point");
+
+		double y= sc.nextDouble();
+
+		// x^2+y^2=R^2
+
+		int r = 4;
+		if (Math.pow(x, 2) + (Math.pow(y, 2)) <= Math.pow(r, 2)) {
+			System.out.println("This point is in the circle");
+		} else {
+			System.out.println("This point is not in the circle");
+		}
+
+	}
+
+}
