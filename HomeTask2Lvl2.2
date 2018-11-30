@@ -5,29 +5,20 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Input X coordinate  for the point");
-		double x = sc.nextDouble();
+		System.out.println("Input number of your ticket");
 
-		System.out.println("Input Y coordinate  for the point");
-		double y = sc.nextDouble();
+		int number = sc.nextInt();
 
-		int xa = 0;
-		int ya = 0;
+		int a = (number / 1000) + (number % 1000 / 100);
 
-		int xb = 4;
-		int yb = 4;
+		int b = (number % 100 / 10) + (number % 10);
 
-		int xc = 6;
-		int yc = 1;
-
-		if ((x - xa) * (yb - ya) - (y - ya) * (xb - xa) < 0 || (x - xb) * (yc - yb) - (y - yb) * (xc - xb) < 0
-				|| (x - xc) * (ya - yc) - (y - yc) * (xa - xc) < 0) {
-			System.out.println("This point is not in the triangle");
+		if (a == b) {
+			System.out.println("Your ticket is lucky");
 		} else {
-			System.out.println("This point is in the triangle");
+			System.out.println("Your ticket isn`t lucky, try again)");
 		}
 
 	}
