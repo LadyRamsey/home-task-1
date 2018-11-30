@@ -7,27 +7,20 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Input first number of your ticket");
+		System.out.println("Input number of your ticket");
 
-		int a = sc.nextInt();
+		int number = sc.nextInt();
 
-		System.out.println("Input second number of your ticket");
+		int a = (number / 1000) + (number % 1000 / 100);
 
-		int b = sc.nextInt();
+		int b = (number % 100 / 10) + (number % 10);
 
-		System.out.println("Input third number of your ticket");
-
-		int c = sc.nextInt();
-
-		System.out.println("Input fourth number of your ticket");
-
-		int d = sc.nextInt();
-
-		if (a + b == c + d) {
-			System.out.println("Your ticket are lucky!!!");
+		if (a == b) {
+			System.out.println("Your ticket is lucky");
 		} else {
-			System.out.println("Sorry, your ticket are not lucky. Try again)");
+			System.out.println("Your ticket isn`t lucky, try again)");
 		}
+
 	}
 
 }
