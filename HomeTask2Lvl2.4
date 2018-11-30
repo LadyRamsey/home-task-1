@@ -5,31 +5,20 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input first number");
-		
-		int a = sc.nextInt();
-		System.out.println("Input second number");
-		
-		int b = sc.nextInt();
-		
-		System.out.println("Input third number");
-		
-		int c = sc.nextInt();
-		
-		System.out.println("Input fourth number");
-		
-		int d = sc.nextInt();
-		System.out.println("Input fiveth number");
-		
-		int e = sc.nextInt();
-		
-		System.out.println("Input sixth number");
-		
-		int f = sc.nextInt();
-		
-		if(a==f && b==e && c==d) {
+
+		int number = sc.nextInt();
+
+		int a = number / 100000;
+		int b = number % 100000 / 10000;
+		int c = number % 10000 / 1000;
+		int d = number % 1000 / 100;
+		int e = number % 100 / 10;
+		int f = number % 10;
+
+		if (a == f && b == e && c == d) {
 			System.out.println("This number is palindrome");
 		} else {
 			System.out.println("This number isn`t palindrome");
