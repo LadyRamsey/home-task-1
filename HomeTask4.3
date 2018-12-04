@@ -1,0 +1,34 @@
+package com.gmail.gunkophotos;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Random rn = new Random();
+
+		int[] a = new int[15];
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = rn.nextInt();
+		}
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.println("Index " + i + " = " + a[i]);
+		}
+
+		System.out.println();
+
+		int[] b = new int[30];
+		b = Arrays.copyOf(a, 30);
+
+		for (int i = 15; i < b.length; i++) {
+			b[i] = a[i - 15] * 2;
+			System.out.println("Index " + i + " = " + b[i] + "  ");
+		}
+
+	}
+
+}
