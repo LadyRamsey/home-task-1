@@ -1,0 +1,25 @@
+package com.gmail.gunkophotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Write a sentence");
+		String text = sc.nextLine();
+		
+    char[] x = text.toCharArray();
+		char y = 'b';
+		int a = 0;
+		
+    for (int i = 0; i < text.length(); i++) {
+			if (x[i] == y) {
+				a = a + 1;
+			}
+		}
+		System.out.println("There is/are " + a + " b in this sentence.");
+	}
+}
