@@ -1,0 +1,19 @@
+package com.gmail.gunkohotos;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Write the sentence and press enter");
+		String a = sc.nextLine();
+		System.out.println(words(a));
+	}
+
+	public static int words(String text) {
+		String[] a = text.split(" ");
+		int b = a.length;
+		return b;
+	}
+}
