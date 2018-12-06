@@ -1,0 +1,16 @@
+package com.gmail.gunkophotos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String say = "I don`t have enough money, only ";
+		int dollars = 23;
+		double cents = 0.50;
+		System.out.println(money(say, dollars, cents));
+	}
+
+	public static String money(String a, int b, double c) {
+		String myMoney = a + (b + c) + ".";
+		return myMoney;
+	}
+}
